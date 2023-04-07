@@ -1,0 +1,10 @@
+<div *ngIf="this.loader.getLoading()" class="cssload-container">
+    <div class="cssload-speeding-wheel"></div>
+</div>
+<div class="cards" *ngFor="let track of tracksList;">
+    <app-card [track]="track"></app-card>
+</div>
+<div *ngIf="tracksList.length===0 && !this.loader.getLoading()" class="no__result">
+    <h4>Whoops Got No Results</h4>
+    <img src="../../assets/not_found.svg" alt="Whoops">
+</div>

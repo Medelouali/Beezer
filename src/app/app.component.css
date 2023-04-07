@@ -1,0 +1,131 @@
+.main{
+    margin: 0 1rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-top: 1rem;
+    gap: 1rem;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    /* height: 100vh; */
+}
+
+.main > header{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+header .search__field{
+    border: 0.1rem solid rgb(193, 193, 216);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+    padding: .4rem;
+}
+
+.search__field input{
+    border: none;
+    outline: none;
+    padding: 0.2rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.search__field span{
+    /* margin: auto; */
+    width: 100%;
+    cursor: pointer;
+}
+
+header .socials{
+    display: flex;
+    gap: 1rem;
+}
+
+.socials img{
+    cursor: pointer;
+}
+
+.browser > nav{
+    display: grid;
+    gap: 1rem;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgb(248, 251, 253);
+    height: max-content;
+}
+
+
+
+nav > a, nav p{
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+    place-items: center;
+    padding: 0.2rem 1rem;
+}
+
+nav p{
+    max-width: 200px;
+}
+nav > a:hover{
+    background-color: rgb(3, 3, 63);
+    color: whitesmoke;
+    transition: all ease-out 300ms;
+}
+
+a > p{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+    justify-self: start;
+}
+
+.browser{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+    height: 90%;
+    max-height: 100%;
+}
+
+.browser__main{
+    height: fit-content;
+    overflow-y: auto;
+    max-height: 85vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #bdbcc4;
+    border-radius: 4px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+@media (max-width: 600px) {
+    .browser {
+        gap: 0;
+    }
+}
+
+.small__device{
+    width: 100%;
+}
